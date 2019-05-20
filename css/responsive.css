@@ -1,0 +1,29 @@
+@media screen and (max-width: 991px) {
+	#music, #instagram {
+		height: 780px;
+	}.musicBlock {
+    	height: 160px;
+ 	}.ftNavInfor {
+    	width: 50%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.souvenirBlock1 {
+    	width: 22%;
+	}.musicBlock {
+    	height: 160px;
+	}.khoiMoText h2, #latestNewsText h2, .musicText h2 {
+		font-size: 20px;
+	}.musicText {
+		bottom: 0;
+	}div#tourBlock {
+    	width: 95%;
+	}.tourBlDate {
+   		width: 12%;
+   	}.tourBlPlace {
+    	width: 80%;
+	}.memberText {
+		padding: 15px;
+	}
+}

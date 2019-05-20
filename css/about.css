@@ -1,0 +1,68 @@
+div#infor {
+    width: 100%;
+    background: url(../images/ImagineDragons1.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+div#inforH1 {
+	width: 100%;
+	height: 300px;
+	background: url(../images/bg-line.png) rgba(0, 0, 0, 0.18);
+	padding-left: 90px;
+	box-sizing: border-box;
+	color: white;
+	line-height: 460px;
+	font-family: LatoMedium;
+	font-size: 35px;
+}
+div#inforText {
+    background: url(../images/bg-line.png) rgba(15, 15, 17, 0.72);
+    padding: 50px 0 100px 50px;
+}#inforText p {
+    width: 78%;
+    color: #ccc;
+    font-family: LatoRegular;
+    line-height: 25px;
+}div#member {
+    width: 100%;
+    height: 540px;
+}
+.memberItem {
+    width: 25%;
+    height: 540px;
+    float: left;
+    position: relative;
+}
+img.memberImg {
+    width: 100%;
+    height: 100%;
+}.memberText {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    text-align: left;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: lato;
+    color: #d4cfcf;
+    background: rgba(0, 0, 0, 0.56);
+    line-height: 22px;
+    z-index: 99;
+}span.memberItalic {
+    font-family: LightItalic;
+}span.memberBold {
+    font-weight: 700;
+}.memberKhoiVang {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    background: linear-gradient(to right, rgba(255, 255, 0, 0.27), rgba(255, 255, 0, 0));
+    visibility: hidden;
+    transition: background 0.3s ease-in-out;
+}
+.memberItem:hover .memberKhoiVang {
+    visibility: visible;
+}

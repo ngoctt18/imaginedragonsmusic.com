@@ -1,0 +1,570 @@
+@font-face {
+    font-family: LatoRegular;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: LatoThin;
+    src: url(../fonts/Lato-Thin.ttf);
+}
+@font-face {
+    font-family: LightItalic;
+    src: url(../fonts/Lato-LightItalic.ttf);
+}@font-face {
+    font-family: LatoMedium;
+    src: url(../fonts/Lato-Medium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {  text-decoration: none;}
+ul { list-style-type: none;}
+#bannerTop {
+    width: 100%;
+    height: 100px;
+    background: black;
+    text-align: center;
+}
+#bannerTop img {
+    width: 37%;
+    padding-top: 8px;
+}
+div#navTop {
+    width: 100%;
+    height: 35px;
+    background: linear-gradient(to right, rgba(15, 15, 15, .95), rgba(8, 8, 8, .95));
+    font-family: monospace;
+    font-size: 18px;
+    box-shadow: cyan 0px -1px 13px 0px;
+}
+div.navSocial {
+    width: 27%;
+    height: 100%;
+    padding: 0.5em 0 0 1em;
+    box-sizing: border-box;
+    float: left;
+    font-family: monospace;
+    line-height: 10px;
+}
+div.navSocial a {
+    color: white;
+    transition: color 1s ease-out;
+}
+div.ftNavSocial {
+    padding-top: 18px;
+}
+nav#navMenuMid {
+    width: 55%;
+    height: 100%;
+    float: left;
+}
+nav#navMenuMid ul {
+    padding: 0;
+    margin: 0;
+}
+nav#navMenuMid ul li {
+    float: left;
+}
+nav#navMenuMid ul li a {
+    display: block;
+    line-height: 35px;
+    padding: 0 10px;
+    color: white;
+    transition: color 1s ease-out;
+}
+div#navLogin {
+    width: 10%;
+    height: 100%;
+    line-height: 35px;
+    float: right;
+}
+div#navLogin a {
+    color: white;
+    transition: color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#navTop a:hover, nav#navMenuMid .selected {
+    color: #f1b92d;
+}
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+div#souvenir {
+    width: 100%;
+    height: 850px;
+    /*Code cho ảnh nen mo de len anh nen khong mo*/
+    background-image: url(../images/bg-pattern-overlay.png),  url(../images/souvenir.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: left top, center center;
+    background-size: auto, cover;
+    background-attachment: fixed;
+}
+div#souvernirSmall {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    font-family: monospace;
+    padding-top: 50px;
+}
+.souvenirBlock1 {
+    width: 23%;
+    height: 300px;
+    position: relative;
+    float: left;
+    margin: 7px;
+    background: rgba(255, 255, 255, 0.44);
+    box-sizing: border-box;
+}
+img.souvenirImg {
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+}
+.khoiMo {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.14), rgb(23, 23, 23));
+    position: absolute;
+    z-index: 9;
+}.khoiMo:hover {
+    background: linear-gradient(to right, rgba(255, 255, 0, 0.31), rgba(255, 255, 0, 0.08));
+}
+.khoiMoText {
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    text-align: center;
+    font-size: 19px;
+    line-height: 40px;
+    z-index: 99;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+.khoiMoText h2 {
+    color: white;
+    padding: 0 10px;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: -2.5px;
+}
+a.souvenirBtn {
+    color: #f1b92d;
+    border: 2px solid #f1b92d;
+    padding: 5px 28px;
+    visibility: hidden;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+.khoiMo:hover .khoiMoText {
+    transform: translateY(-40px);
+}
+.khoiMo:hover {
+/*     background: linear-gradient(rgba(240, 181, 45, 0.4), rgba(202, 188, 59, 0.41)); */
+}
+.khoiMo:hover a {
+    visibility: visible;
+}
+a.souvenirBtn:hover {
+    background: rgba(74, 141, 144, 0.54);
+}
+h1.souvenirH1 {
+    text-shadow: 2px 3px 1px rgb(86, 73, 73);
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    position: relative;
+    font-family: monospace;
+    color: white;
+}
+h1.souvenirH1.H1Black {
+    color: black;
+}
+h1.souvenirH1:before {
+    width: 30%;
+    height: 1px;
+    left: 0%;
+    top: 50%;
+    float: left;
+    background-image: linear-gradient(to right, rgba(31, 26, 26, 0.13), rgb(0, 0, 0));
+    content: '';
+    position: absolute;
+    line-height: 1em;
+}
+h1.souvenirH1:after {
+    width: 30%;
+    height: 1px;
+    right: 0%;
+    top: 50%;
+    float: right;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(31, 26, 26, 0.13));
+    content: '';
+    position: absolute;
+    line-height: 1em;
+}
+#latestNewsSmall {
+    width: 90%;
+    padding-top: 50px;
+    margin: 0 auto;
+    color: white;
+}
+#latestNews {
+    width: 100%;
+    height: 750px;
+    background: rgb(12, 12, 12);
+}
+#latestNewsBlock1 {
+    width: 49%;
+    height: 470px;
+    position: relative;
+    margin: 5px;
+    float: left;
+}
+img#latestNewsImg1 {
+    width: 100%;
+    height: 100%;
+}
+#latestNewsMo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(23, 23, 23, 0.94));
+    z-index: 9;
+}
+#latestNewsText {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    padding-left: 15px;
+    line-height: 35px;
+    transform: translateY(0);
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+.H1White {
+    text-shadow: 0 4px 1px rgba(138, 75, 75, 0.84);
+}
+h1.H1White:before {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.13), rgb(255, 255, 255));
+}
+h1.H1White:after {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.13));
+}
+#latestNewsText h2 {
+    font-family: monospace;
+    font-size: 29px;
+    font-weight: 100;
+    letter-spacing: -2.5px;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+#latestNewsMo p i {
+    font-family: LightItalic;
+}
+#latestNewsBlock2 {
+    width: 23%;
+    height: 470px;
+    float: left;
+    margin: 5px;
+    position: relative;
+}
+#latestNewsMo:hover #latestNewsText {
+    transform: translateY(-50px);
+}
+#latestNewsMo:hover #latestNewsText h2 {
+    color: rgb(208, 226, 15);
+}
+#latestNewsText h2:hover {
+    text-decoration: underline;    
+}
+#music {
+    width: 100%;
+    height: 890px;
+    background-attachment: fixed;
+    /*Hai background-image  def len nhau*/
+    background-image: url(../images/bg-line.png),  url(../images/musicBackground.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: left top, center center;
+    background-size: auto, cover;
+}
+div#musicSmall {
+    width: 90%;
+    height: 93%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.musicBlock {
+    height: 279px;
+}
+.musicKhoiMo {
+    width: 100%;
+    height: 100%;
+    background: rgba(97, 91, 60, 0.56);
+    position: absolute;
+    z-index: 99;
+    visibility: hidden;
+    transform: scale(0.9);
+    -moz-transform: scale(0.8);
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.9s ease;
+}
+.musicText {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 35px;
+    color: white;
+    line-height: 80px;
+}
+a.musicBtn {
+    color: #f1b92d;
+    border: 1px solid #f1b92d;
+    padding: 10px 25px;
+    font-family: monospace;
+}
+.musicText h2 {
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: -2.5px;
+    line-height: 33px;
+}
+.musicBlock:hover .musicKhoiMo {
+    transform: scale(1);
+    visibility: visible;
+}
+a.musicBtn:hover {
+    background: maroon;
+}
+a.musicBtn:hover:after {
+    content: " \f144";
+}
+#instagram {
+    width: 100%;
+    height: 1150px;
+    background: url(../images/HomeInstagram.jpg) 0 -100px;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+div#instagramSmall {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.instaBlock {
+    border: 4px solid white;
+    box-sizing: border-box;
+}
+.musicMore {
+    width: 97%;
+    height: 35px;
+    background: #2a2e46;
+    float: left;
+    font-family: LatoRegular;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 25px;
+    transition: all 0.5s ease-out;
+}
+p.musicMore1 {
+    float: right;
+    padding-right: 10px;
+    color: darkgray;
+}
+p.musicMoreBtn {
+    float: right;
+    width: 32px;
+    height: 100%;
+    text-align: center;
+    background: #262834;
+}
+p.musicMoreBtn a {
+    color: white;
+    display: block;
+}
+p.musicMoreBtn a:hover {
+    color: red;
+}
+.musicMore:hover {
+    width: 100%;
+    background: rgba(61, 105, 179, 0.77);
+    font-family: LightItalic;
+}
+.instaBlock:hover .instaKhoiMo {
+    visibility: hidden;
+}
+.instaKhoiMo {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.43));
+    position: absolute;
+    z-index: 9;
+}div#tour {
+    width: 100%;
+    height: 800px;
+    background: url(../images/HomeUpcomingTours.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}div#tourSmall {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+div#tourBlock {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+.tourBlRow1 {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(183, 165, 165, 0.08);
+}
+.tourBlDate {
+    width: 9%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background-image: linear-gradient(to right,#3d4366,#212438);
+    color: white;
+    font-family: LatoRegular;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-shadow: 0 0 #171926, 1px 1px #171926, 2px 2px #171926, 3px 3px #171926, 4px 4px #171926, 5px 5px #171926, 6px 6px #171926, 7px 7px #171926, 8px 8px #171926, 9px 9px #171926, 10px 10px #171926, 11px 11px #171926, 12px 12px #171926, 13px 13px #171926, 14px 14px #171926, 15px 15px #171926, 16px 16px #171926, 17px 17px #171926, 18px 18px #171926, 19px 19px #171926, 20px 20px #171926, 21px 21px #171926, 22px 22px #171926, 23px 23px #171926, 24px 24px #171926, 25px 25px #171926, 26px 26px #171926, 27px 27px #171926, 28px 28px #171926, 29px 29px #171926, 30px 30px #171926, 31px 31px #171926, 32px 32px #171926, 33px 33px #171926, 34px 34px #171926, 35px 35px #171926, 36px 36px #171926, 37px 37px #171926, 38px 38px #171926, 39px 39px #171926, 40px 40px #171926, 41px 41px #171926,42px 42px #171926, 43px 43px #171926, 44px 44px #171926, 45px 45px #171926;
+}span.tourmonth {font-size: 14px;font-family: lato;font-weight: 700;color: #999;}
+span.tourDate {
+    font-size: 35px;
+    font-style: italic;
+}.tourBlPlace {
+    width: 85%;
+    height: 100%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+    padding-left: 20px;
+    font-family: lato;
+    background: rgba(236, 236, 222, 0.85);
+    display: block;
+}span.tourTextBold {
+    font-weight: 600;
+}
+span.tourTextLight {
+    color: #777;
+}
+.tourBlBtn {
+    float: left;
+    height: 100%;
+    width: 2%;
+    line-height: 100px;
+    transition: all 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}.tourBlRow1:hover .tourBlBtn {
+    transform: translateX(15px);
+}span.tourTicket {
+    float: right;
+    padding-right: 25px;
+}
+div#footer {
+    width: 100%;
+    height: 550px;
+    background: url(../images/main-bg.gif);
+    background: black;
+}
+
+div#footerSmall {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+h2.ftH2 {font-family: LatoThin;color: rgb(212, 151, 0);margin-bottom: 25px;}
+label.ftLabel {
+    color: white;
+    font-family: LightItalic;
+}
+span.ftRed {
+    color: red;
+}
+input#ftMail, input#ftZipCode {
+    width: 70%;
+    padding: 5px 0 5px 10px;
+    font-size: 20px;
+    font-family: LightItalic;
+    margin: 10px 0 30px 0;
+    border: 1px solid rgba(255, 0, 0, 0.28);
+}
+.ftCheckBox, small.small {
+    color: white;
+    font-family: Lato;
+    line-height: 25px;
+}
+input.ftBtn {
+    margin-left: 20px;
+}
+small.ftSubcribe, small.small {
+    color: darkgray;
+}input.ftBtnBot {
+    margin: 50px;
+    padding: 12px 30px;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 21px;
+    background-image: linear-gradient(to right,#29323c,#485563);
+    border: 1px solid transparent;
+    color: floralwhite;
+}
+input.ftBtnBot:hover {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.72), rgba(36, 43, 51, 0.82));
+}div#footerNav {
+    width: 100%;
+    height: 50px;
+    background: #0A0A0A;
+}
+img.ftNavLeftImg1 {
+    width: 30px;
+    margin-right: 12px;
+}
+img.ftNavLeftImg2 {
+    width: 18px;
+}
+div#ftNavLeft {
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding-top: 9px;
+}.ftNavInfor {
+    width: 35%;
+    float: right;
+    height: 100%;
+    line-height: 49px;
+    color: white;
+    font-family: LatoThin;
+}
+div.ftNavSocial a:hover {
+    color: cyan;
+}.ftNavInfor p small {
+    color: #EFEFEF;
+}.footerMe {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to right, rgba(10, 9, 9, 0.87), rgba(75, 77, 78, 0.52));
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: left;
+    padding-left: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: white;
+    font-family: LatoThin;
+    font-size: 20px;
+}.footerMe p a {
+    color: aquamarine;
+}.footerMe p a:hover {color: deepskyblue;}
